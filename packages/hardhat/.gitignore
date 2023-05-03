@@ -6,8 +6,10 @@ typechain
 typechain-types
 temp
 
+
 #Hardhat files
 cache
 artifacts
 
 deployments
+example-ui

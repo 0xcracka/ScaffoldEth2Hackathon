@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import type { NextPage } from "next";
 import { BugAntIcon, SparklesIcon } from "@heroicons/react/24/outline";
-
+import {CreateEscrow} from "~~/components/CreateEscrow"
 const Home: NextPage = () => {
   return (
     <>
@@ -19,6 +19,8 @@ const Home: NextPage = () => {
           </h1>
           <p className="text-center text-lg">
             Get started by editing{" "}
+        
+            
             <code className="italic bg-base-300 text-base font-bold">packages/nextjs/pages/index.tsx</code>
           </p>
           <p className="text-center text-lg">
@@ -32,7 +34,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <BugAntIcon className="h-8 w-8 fill-secondary" />
               <p>
-                Tinker with your smart contract using the{" "}
+              <CreateEscrow/>{" "}
                 <Link href="/debug" passHref className="link">
                   Debug Contract
                 </Link>{" "}
